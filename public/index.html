@@ -12,7 +12,6 @@
     var socket = io('http://localhost:7000');
 
     socket.on('message-from-server', (response) => {
-      console.log(response);
     });
   
     socket.emit('message-from-client', {

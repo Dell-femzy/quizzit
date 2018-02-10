@@ -15,7 +15,6 @@ server.listen(port, () => console.log('App started'));
 app.use(express.static(path.join(__dirname, "../public")));
 
 socketIo.on('connection', (io) => {
-  console.log('a request was made');
 
 // Emit message from the server
 io.emit('message-from-server',{
@@ -23,7 +22,6 @@ io.emit('message-from-server',{
   });
 
 io.on('message-from-client', (message) => {
-  console.log(message);
   });
 });
 
