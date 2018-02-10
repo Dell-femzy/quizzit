@@ -1,0 +1,28 @@
+{
+  "name": "quizzit",
+  "version": "1.0.0",
+  "description": "This a quiz application",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha chai",
+    "start": "babel-node server/index.js"
+  },
+  "keywords": [
+    "Quiz",
+    "Node",
+    "Express",
+    "Firebase"
+  ],
+  "author": "Balogun Abiodun D",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.2",
+    "socket.io": "^2.0.4"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "morgan": "^1.9.0"
+  }
+}
