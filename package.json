@@ -1,28 +1,45 @@
 {
   "name": "quizzit",
   "version": "1.0.0",
-  "description": "This a quiz application",
+  "description": "quizzit api",
   "main": "index.js",
   "scripts": {
+    "prestart": "",
     "test": "mocha chai",
-    "start": "babel-node server/index.js"
+    "start": "./start.sh",
+    "clean:dist": "scripts/clean.sh",
+    "build:prod": "npm run clean:dist && babel app --out-dir dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dell-femzy/quizzit.git"
   },
   "keywords": [
     "Quiz",
     "Node",
     "Express",
-    "Firebase"
+    "Firebase",
+    "Socket",
+    "Real time"
   ],
   "author": "Balogun Abiodun D",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dell-femzy/quizzit/issues"
+  },
+  "homepage": "https://github.com/Dell-femzy/quizzit#readme",
   "dependencies": {
+    "compression": "^1.7.1",
+    "dotenv": "^5.0.0",
     "express": "^4.16.2",
-    "socket.io": "^2.0.4"
+    "express-winston": "^2.4.0",
+    "helmet": "^3.11.0",
+    "socket.io": "^2.0.4",
+    "winston": "^2.4.0"
   },
   "devDependencies": {
-    "babel": "^6.23.0",
     "babel-cli": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1",
-    "morgan": "^1.9.0"
+    "babel-preset-env": "^1.6.1",
+    "nodemon": "^1.14.12"
   }
 }
