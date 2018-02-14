@@ -1,0 +1,8 @@
+{
+  "apps": [{
+    "script": "dist/index.js",
+    "instances": "max",
+    "watch": true,
+    "exec_mode": "cluster"
+  }]
+}

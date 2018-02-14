@@ -1,7 +1,7 @@
 #!/bin/sh
 
 if [ $NODE_ENV = "production" ]; then
-  node dist/index.js;
+  pm2 start processes.json
 else
   nodemon --exec babel-node app/index.js;
 fi

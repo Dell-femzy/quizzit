@@ -29,7 +29,7 @@ if (env !== 'production') {
     colorize: true
   }));
 }
-
+app.use(helmet());
 app.use(compression());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
